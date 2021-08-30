@@ -40,7 +40,7 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
     list-style: none;
 }
 img{
-    max-width: 800px;
+    max-width: 320px;
 }
 div.flex{
     display: flex;
@@ -67,7 +67,21 @@ html{}
 /* HTML */
   
 /* BODY */
-body{}
+body{
+    margin: 0 auto;
+    font-family: "Lato";
+    color: #FFFFFF;
+    background-color: #00043e;
+    max-width: 320px;
+}
+
+h2 {
+    font-family: "Montserrat";
+}
+
+a {
+    text-decoration: none;
+}
 /* BODY */
   
 /* HEADER */
@@ -98,6 +112,14 @@ main{}
 
 /* MEDIA QUERIES */
     @media screen and (min-width: 400px) {}
-  
+    body{
+        max-width: 360px;
+    }
     @media screen and (min-width: 800px) {}
+    body{
+        max-width: 760px;
+    }
+
+    img{
+        max-width: 760px;
 /* MEDIA QUERIES */
