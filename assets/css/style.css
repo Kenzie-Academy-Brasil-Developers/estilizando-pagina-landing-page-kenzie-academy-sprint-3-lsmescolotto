@@ -41,6 +41,7 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
 }
 img{
     max-width: 250px;
+<<<<<<< HEAD
 }
 a {
     text-decoration: none;
@@ -48,6 +49,8 @@ a {
 }
 figcaption {
     display:none;
+=======
+>>>>>>> 2ad4eed7beaa8dc39e5c6ffa74b74261e31d8168
 }
 div.flex{
     display: flex;
@@ -542,11 +545,7 @@ main{}
         body{
            /*max-width: 1000px;*/
         }
-    
-        img{
-            max-width: 760px;
-        }
-
+   
         div.large-container{
             justify-content: space-between;
             align-items: flex-start;
