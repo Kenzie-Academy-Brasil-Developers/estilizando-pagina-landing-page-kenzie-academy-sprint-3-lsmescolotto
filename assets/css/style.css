@@ -68,8 +68,10 @@ html{}
   
 /* BODY */
 body{
-    margin: 0 auto;
-    font-family: "Lato";
+    margin: 0;
+    color: #FFFFFF;
+    background-color: #00043e;
+    max-width: 100%;
 
 }
 
@@ -411,6 +413,128 @@ main{}
             max-width: 760px;
         }
 
+        div.large-container{
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        
+        .secaoDestaque {
+            height: 800px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: url("../img/background-destaque.webp");
+            font-size: 21px;
+        }
+
+        .secaoDestaque h2 {
+            font-size:63px;
+        }
+
+        .secaoDestaqueFormulario {
+            display: flex;
+            min-width: 50%;
+        }
+
+        .secaoDestaqueFormulario button, .secaoDestaqueFormulario input {
+            font-size: 14px;
+        }
+
+        .secaoSobre {
+            font-size: 19px;
+        }
+
+        .flex-col h2, .flex-col-js h2 {
+            font-size: 24px;
+        }
+
+        .flex-col {
+            margin: 0 5%;
+            font-size: 19px;
+            overflow: hidden;
+        }
+
+        .flex-col h2 {
+            padding-top: 10%;
+            margin: 0 0 7% 0;
+        }
+
+        .flex-col p, .flex-col span {
+            padding-right: 60%;
+        }
+
+        .flex-col p {
+            margin-bottom: 5%;
+        }
+
+        .flex-col span {
+            font-size: 19px;
+        }
+
+        .flex-col button {
+            display: block;
+            margin: 3% 0;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #FFFFFF;
+            color: #303030;
+            border: 1px solid lightgray;
+            font-size:19px;
+        }
+
+        .flex-col img {
+            margin: 0;
+            float:right;
+        }
+
+        .flex-col-js {
+            font-size: 19px;
+            padding: 0 7%;
+        }
+
+        .flex-col-js h2{
+            font-size: 24px;
+            padding-top: 13%;
+            margin-bottom: 7%;
+        }
+
+        .flex-col-js ul{
+            margin: 0 0 0 40%;
+            padding-bottom: 15%;
+        }
+
+        .flex-col-js figure {
+            float: left;
+            padding-top: 5%;
+        }
+
+        .flex-col-js img{
+             width: 350px;
+        }
+        
+        i {
+            color: #00043e;
+        }
+
+        i:hover {
+            display:none;
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 30px;
+            font-size: 13px;
+            font-family: "Lato";
+        }
+        
+        /*img{
+            max-width: 760px;
+        }  */
+
         .secaoCursos{
             text-align: center;
         }
@@ -560,10 +684,6 @@ main{}
 
         }
 
-        .flex-col h2{
-            
-        }
-
         .secaoContato-informacoes p{
             margin: 15px;
             color: #818181;
@@ -608,7 +728,7 @@ main{}
             padding: 150px;
             text-align: center;
         }
-
+        /*TODO ARRUMAR POSIÇÃO DA SEÇÃO SOBRE NA VERSÃO DESKTOP*/
     }
     
 /* MEDIA QUERIES */
