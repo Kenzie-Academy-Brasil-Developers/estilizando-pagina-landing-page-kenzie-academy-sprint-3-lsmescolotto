@@ -40,7 +40,7 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
     list-style: none;
 }
 img{
-    max-width: 320px;
+    max-width: 250px;
 }
 div.flex{
     display: flex;
@@ -408,11 +408,7 @@ main{}
         body{
            /*max-width: 1000px;*/
         }
-    
-        img{
-            max-width: 760px;
-        }
-
+   
         div.large-container{
             justify-content: space-between;
             align-items: flex-start;
