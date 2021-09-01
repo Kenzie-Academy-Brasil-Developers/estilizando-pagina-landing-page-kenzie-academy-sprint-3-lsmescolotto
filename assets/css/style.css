@@ -36,14 +36,23 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family:"Lato",sans-serif;
     list-style: none;
 }
 img{
-    max-width: 320px;
+    max-width: 250px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+figcaption {
+    display:none;
 }
 div.flex{
     display: flex;
+    flex-direction: column;
+    align-items: strech;
 }
 div.full-container{
     width: 100%;
@@ -51,6 +60,9 @@ div.full-container{
     margin:0 auto;
 }
 div.large-container{
+    display:flex;
+    align-items: flex-start;
+    justify-content: space-between;
     width: 100%;
     max-width: 1170px;
     margin:0 auto;
@@ -58,34 +70,156 @@ div.large-container{
 div.container{
     width: 100%;
     max-width: 1140px;
-    margin:0 auto;
+    margin: 0 auto;
 }
 /* GERAL */
   
 /* HTML */
-html{}
+html{
+}
 /* HTML */
   
 /* BODY */
 body{
-    margin: 0 auto;
-    font-family: "Lato";
+    margin: 0;
     color: #FFFFFF;
     background-color: #00043e;
-    max-width: 320px;
+    max-width: 100%;
 }
 
 h2 {
     font-family: "Montserrat";
 }
 
-a {
-    text-decoration: none;
+.secaoDestaque {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0 50px;
+    height: 415px;
+}
+
+.secaoDestaque h2{
+    font-weight: normal;
+    font-size: 2.5rem;
+}
+
+.secaoDestaque p{
+    margin: 30px;
+}
+.secaoDestaqueFormulario {
+    display: flex;
+    min-width: 80%;
+    margin: 0 2.5%;
+}
+.secaoDestaqueFormulario input{
+    width: 60%;
+    padding: 15px 10px;
+    border-radius: 5px  0 0 5px;
+    border: none;
+    font-size: 1rem;
+}
+
+.secaoDestaqueFormulario button{
+    width: 40%;
+    padding: 15px 10px;
+    border-radius: 0 5px 5px 0;
+    background-color: #007aff;
+    color:#FFFFFF;
+    border: none;
+    font-size:1rem;
+}
+.secaoSobre{
+    background-color: #FFFFFF;
+    color: #303030;
+}
+
+.flex-col {
+    margin: 0 12%;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+.flex-col h2 {
+    font-size: 1.9rem;
+    font-weight: bold;
+    line-height: 1;
+    padding-top: 30%;
+    margin: 0 0 30% 0;
+}
+.flex-col p {
+    margin: 0 0 20% 0;
+    padding: 0 10% 0 0;
+}
+.flex-col span {
+    color:#818181;
+    font-size: 1.3rem;
+}
+.flex-col button {
+    display: block;
+    margin: 15% 0;
+    padding: 5% 32%;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    color: #303030;
+    border: 1px solid lightgray;
+    font-size:1.5rem;
+}
+.flex-col img {
+    margin: 0 10% 20% 10%;
+}
+.flex-col-js {
+    background-color: whitesmoke;
+    padding: 0 12%;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+.flex-col-js h2{
+    line-height: 1;
+    font-size: 1.9rem;
+    text-align: center;
+    margin: 0 0 20% 0;
+}
+.flex-col-js figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flex-col-js img{
+    width: 150px;
+    margin: 30% 0 15% 0;
+}
+.flex-col-js ul {
+    color:#818181;
+    list-style: initial;
+    margin: 0 5% 0 15%;
+    padding-bottom: 30%;
 }
 /* BODY */
   
 /* HEADER */
-header{}
+header{
+    padding: 20px 30px 25px 20px;
+}
+
+header img {
+    height: 80px;
+    width: 80px;
+}
+
+i {
+    font-size: 30px;
+    color:#818181;
+    border: 2px solid #00043e;
+}
+
+i:hover {
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    border-color: #FFFFFF;
+}
+
+nav ul {
+    display: none;
+}
 /* HEADER */
   
 /* FOOTER */
@@ -111,15 +245,114 @@ main{}
   
 
 /* MEDIA QUERIES */
-    @media screen and (min-width: 400px) {}
-    body{
-        max-width: 360px;
-    }
-    @media screen and (min-width: 800px) {}
-    body{
-        max-width: 760px;
-    }
+    @media screen and (min-width: 800px) {
+        /*adicionar img no background da seção destaque*/
+        div.large-container{
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        body{
+        /*max-width: 960px;*/
+        }
+        .secaoDestaque {
+            height: 800px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: url("../img/background-destaque.webp");
+            font-size: 21px;
+        }
+        .secaoDestaque h2 {
+            font-size:63px;
+        }
+        .secaoDestaqueFormulario {
+            display: flex;
+            min-width: 50%;
+        }
+        .secaoDestaqueFormulario button, .secaoDestaqueFormulario input {
+            font-size: 14px;
+        }
+        .secaoSobre {
+            font-size: 19px;
+        }
+        .flex-col h2, .flex-col-js h2 {
+            font-size: 24px;
+        }
+        .flex-col {
+            margin: 0 5%;
+            font-size: 19px;
+            overflow: hidden;
+        }
+        .flex-col h2 {
+            padding-top: 10%;
+            margin: 0 0 7% 0;
+        }
+        .flex-col p, .flex-col span {
+            padding-right: 60%;
+        }
+        .flex-col p {
+            margin-bottom: 5%;
+        }
+        .flex-col span {
+            font-size: 19px;
+        }
+        .flex-col button {
+            display: block;
+            margin: 3% 0;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #FFFFFF;
+            color: #303030;
+            border: 1px solid lightgray;
+            font-size:19px;
+        }
+        .flex-col img {
+            margin: 0;
+            float:right;
+        }
+        .flex-col-js {
+            font-size: 19px;
+            padding: 0 7%;
+        }
+        .flex-col-js h2{
+            font-size: 24px;
+            padding-top: 13%;
+            margin-bottom: 7%;
+        }
+        .flex-col-js ul{
+            margin: 0 0 0 40%;
+            padding-bottom: 15%;
+        }
+        .flex-col-js figure {
+            float: left;
+            padding-top: 5%;
+        }
+        .flex-col-js img{
+             width: 350px;
+        }
+        header {
 
-    img{
-        max-width: 760px;
+        }
+        i {
+            color: #00043e;
+        }
+        i:hover {
+            display:none;
+        }
+        nav ul {
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 30px;
+            font-size: 13px;
+            font-family: "Lato";
+        }
+        
+        /*img{
+            max-width: 760px;
+        }  */
+
+    
+    }
 /* MEDIA QUERIES */
